@@ -57,11 +57,11 @@ def calculo():
                     sub_expresion = lista_tokens[izq + 1 : der]
                     sub_resultado = calcular_expresion(sub_expresion)
                     lista_tokens = lista_tokens[:izq] + sub_resultado + lista_tokens[der + 1:]
-                resultado_final = calcular_expresion(lista_tokens)
-                resultado = round(float(resultado_final[0]), 4)
-                operacion = {"operacion" : expresion, "resultado": resultado}
+                resultado = calcular_expresion(lista_tokens)
+                resultado_final = round(float(resultado[0]), 4)
+                operacion = {"operacion" : expresion, "resultado": resultado_final}
                 guardar_registro_operaciones(operacion)
-                interfaz.mostrar_mensaje(resultado) 
+                interfaz.mostrar_mensaje(resultado_final) 
             except ValueError as error:
                 interfaz.mostrar_error(error)
             except ZeroDivisionError:

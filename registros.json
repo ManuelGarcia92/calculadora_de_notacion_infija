@@ -142,5 +142,13 @@
     {
         "operacion": "2**(3)**3*4+5/20",
         "resultado": 536870912.25
+    },
+    {
+        "operacion": "1**2**3**4",
+        "resultado": 1.0
+    },
+    {
+        "operacion": "3$2",
+        "resultado": 1.7321
     }
 ]
