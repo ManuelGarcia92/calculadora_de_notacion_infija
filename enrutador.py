@@ -73,7 +73,7 @@ def calculo():
 def iniciar_sistema():
     while True:
         interfaz.limpiar_terminal()
-        interfaz.mostrar_titulo("INTÉRPRETE MATEMÁTICO v0.8")
+        interfaz.mostrar_titulo("Calculadora de expresiones v0.8")
         interfaz.mostrar_menu(constantes.MENU_PRINCIPAL)
         opcion = interfaz.pedir_dato(">>> : ")
         if opcion == "3":
